@@ -51,6 +51,10 @@ body{
     gap: 10px;
 }
 
+.navbar__s4{
+    display: none;
+}
+
 .mylearning{
     position: relative;
     cursor: pointer;
@@ -78,7 +82,7 @@ body{
     background-color: white;
     border: solid grey 2px;
     width: 35%;
-    padding: 2%;
+    padding: 10px;
     position: absolute;
     top: 20%;
     left: 5%;
@@ -127,8 +131,6 @@ body{
     transition: 1s;
 }
 
-
-
 .recommended{
     padding: 10px;
 }
@@ -141,7 +143,9 @@ body{
 }
 
 .courses_card{
-    width: 400px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .courses_card img{
@@ -208,4 +212,23 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .courses_card{
+        flex-basis: 40%;
+    }
+    .categories{
+        display: none;
+    }
+    .navbar__s4{
+        display: block;
+    }
+    .navbar__s3{
+        display: none;
+    }
+    .offercard{
+        font-size: 10px;
+    }
+    
 }
